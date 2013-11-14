@@ -7,16 +7,47 @@
 //
 
 #import "AEAppDelegate.h"
+#import "UIView+AEScaningEffect.h"
+
 
 @implementation AEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor blackColor];
+    
+    UIViewController *viewctl = [[UIViewController alloc] initWithNibName:nil bundle:nil];
+    self.window.rootViewController = viewctl;
+    
+    self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 100, 300, 250)];
+    UIImage *img = [UIImage imageNamed:@"avatar.jpg"];
+    self.imgView.image = img;
+    [viewctl.view addSubview:self.imgView];
+    
+    UIButton *start = [[UIButton alloc]initWithFrame:CGRectMake(30, 350, 100, 60)];
+    [start setTitle:@"start" forState:UIControlStateNormal];
+    [start addTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
+    [viewctl.view addSubview:start];
+    
+    UIButton *stop = [[UIButton alloc]initWithFrame:CGRectMake(180, 350, 100, 60)];
+    [stop setTitle:@"stop" forState:UIControlStateNormal];
+    [stop addTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
+    [viewctl.view addSubview:stop];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void)start:(id)sender
+{
+    [self.imgView startScaningRepeatCount:1000 Duration:2 HeightFactor:0.3];
+}
+
+- (void)stop:(id)sender
+{
+    [self.imgView stopScaning];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

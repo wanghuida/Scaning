@@ -19,6 +19,8 @@
 		3DE24B3A1834618E004E4538 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE24B221834618E004E4538 /* UIKit.framework */; };
 		3DE24B421834618E004E4538 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DE24B401834618E004E4538 /* InfoPlist.strings */; };
 		3DE24B441834618E004E4538 /* ScaningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE24B431834618E004E4538 /* ScaningTests.m */; };
+		3DE24B4F183461D6004E4538 /* UIView+AEScaningEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE24B4E183461D6004E4538 /* UIView+AEScaningEffect.m */; };
+		3DE24B591835018C004E4538 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DE24B581835018C004E4538 /* avatar.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		3DE24B3F1834618E004E4538 /* ScaningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScaningTests-Info.plist"; sourceTree = "<group>"; };
 		3DE24B411834618E004E4538 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3DE24B431834618E004E4538 /* ScaningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaningTests.m; sourceTree = "<group>"; };
+		3DE24B4D183461D6004E4538 /* UIView+AEScaningEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AEScaningEffect.h"; sourceTree = "<group>"; };
+		3DE24B4E183461D6004E4538 /* UIView+AEScaningEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AEScaningEffect.m"; sourceTree = "<group>"; };
+		3DE24B581835018C004E4538 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +112,13 @@
 		3DE24B241834618E004E4538 /* Scaning */ = {
 			isa = PBXGroup;
 			children = (
+				3DE24B581835018C004E4538 /* avatar.jpg */,
 				3DE24B2D1834618E004E4538 /* AEAppDelegate.h */,
 				3DE24B2E1834618E004E4538 /* AEAppDelegate.m */,
 				3DE24B301834618E004E4538 /* Images.xcassets */,
 				3DE24B251834618E004E4538 /* Supporting Files */,
+				3DE24B4D183461D6004E4538 /* UIView+AEScaningEffect.h */,
+				3DE24B4E183461D6004E4538 /* UIView+AEScaningEffect.m */,
 			);
 			path = Scaning;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE24B591835018C004E4538 /* avatar.jpg in Resources */,
 				3DE24B291834618E004E4538 /* InfoPlist.strings in Resources */,
 				3DE24B311834618E004E4538 /* Images.xcassets in Resources */,
 			);
@@ -240,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE24B4F183461D6004E4538 /* UIView+AEScaningEffect.m in Sources */,
 				3DE24B2F1834618E004E4538 /* AEAppDelegate.m in Sources */,
 				3DE24B2B1834618E004E4538 /* main.m in Sources */,
 			);
