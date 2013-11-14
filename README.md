@@ -7,6 +7,7 @@ please clone and run the project, this project is a demo.
 
 #### Effect
 
+![scaning](http://wanghd.com/images/post/Scaning.jpg "scaning")
 
 
 #### function
