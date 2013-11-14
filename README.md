@@ -15,6 +15,8 @@ please clone and run the project, this project is a demo.
 ```
 
 # start scaning
+- (void) startScaningRepeatCount:(int)count;
+- (void) startScaningRepeatCount:(int)count Duration:(int)duration;
 - (void) startScaningRepeatCount:(int)count Duration:(int)duration HeightFactor:(float) factor;
 
 # stop scaning
